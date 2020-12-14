@@ -1,0 +1,109 @@
+
+.content{
+    width: 84%;
+    height: 100px;
+    margin: 8%;
+    margin-top: 5%;
+}
+
+.chooser{
+    display: inline-block;
+    width: 25%;
+}
+
+.header{
+    border-bottom: solid black;
+}
+
+.choose{
+    margin-bottom: 10px;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.dustur_sec{
+    width: 150px;
+    height: 300px;
+}
+
+.dusturbutton{
+    background-color: #fff;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    width: 150px;
+    height: 40px;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+.dusturbutton:hover{
+    background-color: black;
+    color: #fff;
+    transition-duration: .2s;
+}
+
+.info{
+    width: 300px;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 27%;
+}
+
+.calc{
+    margin-top: 2%;
+    display: inline-block;
+    position: absolute;
+    margin-left: 5%;
+}
+
+.dustur1_calc{
+    display: none;
+    height: 480px;
+    width: 600px;
+}
+
+.dustur2_calc{
+    display: none;
+    height: 480px;
+    width: 600px;
+}
+
+.dustur3_calc{
+    display: none;
+    height: 480px;
+    width: 600px;
+}
+
+.dustur4_calc{
+    display: none;
+    height: 480px;
+    width: 600px;
+}
+
+.input{
+    border-style: solid;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.resultbutton{
+    background-color: #fff;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    height: 30px;
+}
+
+.resultbutton:hover{
+    border-style: solid;
+    background-color: black;
+    color: #fff;
+    transition-duration: .2s;
+}
+
+#resultdiv{
+    display: none;
+}

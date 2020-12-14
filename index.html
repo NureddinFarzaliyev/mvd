@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Müxtəsər Vurma Düsturu kalkulyatoru.</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="Müxtəsər Vurma Düsturları kalkulayotoru.">
+        <meta name="description" content="Nurəddin Fərzəliyev tərəfindən hazırlanmış Müxtəsər Vurma Düsturları kalkulayotoru.">
+        <meta name="keywords" content="müxtəsər, vurma, düstur, 7, sinif, riyaziyyat, düstur">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="author" content="Nureddin Farzaliyev">
+    </head>
+    <body style="font-family: 'Source Sans Pro';">
+        <div class="header">
+            <h1 style="text-align: center; margin-top: 25px;">Müxtəsər Vurma Düsturları kalkulyatoru. - BETA</h1>
+            <p class="author" style="text-align: center;"><b>Nurəddin Fərzəliyev tərəfindən hazırlanmışdır və hələ BETA versiyadadır.</b></p>
+        </div>
+        <div class="content">
+            <div class="chooser">
+                <h2 class="choose">Düstur seçin:</h2>
+                <div class="dustur_sec">
+                    <input type="button" value="Cəmin kvadratı" class="dusturbutton" id="dustur1" onclick="openFirst()">
+                    <input type="button" value="Fərqin kvadratı" class="dusturbutton" id="dustur2" onclick="openSecond()">
+                    <input type="button" value="Kvadratlar Fərqi" class="dusturbutton" id="dustur3" onclick="openThird()">
+                    <!--<input type="button" value="dustur" class="dusturbutton" id="dustur4" onclick="openFourth()">-->
+                </div>
+            </div>
+            <div class="calc">
+                <div class="info" id="info">
+                    <h2>Kalkulyatoru istifadə etmək üçün sol tərəfdən sizə lazım olan düsturu seçin.</h2>
+                </div>
+                <div class="dustur1_calc" id="calc1">
+                    <h1>Cəmin kvadratı - (a+b)^2</h1>
+                    <h3 style="display: inline-block; margin-right: 2%;">A-nı daxil edin:</h3>
+                    <input class="input" type="text" id="d1a" maxlength="3"><br>
+                    <h3 style="display: inline-block; margin-right: 2%;">B-ni daxil edin:</h3>
+                    <input class="input" type="text" id="d1b" maxlength="3"><br>
+                    <input type="button" value="Hesabla" class="resultbutton" onclick="ceminKvadrati()">
+                    <div id="resultdiv">
+                        <h3 style="display: inline-block;">Nəticə:</h3>&nbsp;<h3 id="result" style="display: inline-block;">dd</h3>
+                    </div>
+                </div>
+                <div class="dustur2_calc" id="calc2">
+                    <h1>Fərqin kvadratı - (a-b)^2</h1>
+                    <h3 style="display: inline-block; margin-right: 2%;">A-nı daxil edin:</h3>
+                    <input class="input" type="text" id="d2a" maxlength="3"><br>
+                    <h3 style="display: inline-block; margin-right: 2%;">B-ni daxil edin:</h3>
+                    <input class="input" type="text" id="d2b" maxlength="3"><br>
+                    <input type="button" value="Hesabla" class="resultbutton" onclick="ferqinKvadrati()">
+                    <div id="resultdiv2" style="display: none;">
+                        <h3 style="display: inline-block;">Nəticə:</h3>&nbsp;<h3 id="result2" style="display: inline-block;">dd</h3>
+                    </div>
+                </div>
+                <div class="dustur3_calc" id="calc3">
+                    <h1>Kvadratlar fərqi - (a^2-b^2)</h1>
+                    <h3 style="display: inline-block; margin-right: 2%;">A-nı daxil edin:</h3>
+                    <input class="input" type="text" id="d3a" maxlength="3"><br>
+                    <h3 style="display: inline-block; margin-right: 2%;">B-ni daxil edin:</h3>
+                    <input class="input" type="text" id="d3b" maxlength="3"><br>
+                    <input type="button" value="Hesabla" class="resultbutton" onclick="kvadratFerqi()">
+                    <div id="resultdiv3" style="display: none;">
+                        <h3 style="display: inline-block;">Nəticə:</h3>&nbsp;<h3 id="result3" style="display: inline-block;">dd</h3>
+                    </div>
+                </div>
+                <!--
+                <div class="dustur4_calc" id="calc4">
+                    <h1>4</h1>
+                </div>
+                --> 
+            </div>
+        </div>
+    </body>
+</html>
